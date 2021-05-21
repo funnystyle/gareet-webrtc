@@ -56,8 +56,8 @@
     <script src="js/howler.core.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-      function doOnOrientationChange() {
-        if (window.innerHeight > window.innerWidth) {
+      function orientationHandler() {
+        if (window.innerHeight < window.innerWidth) {
           document.getElementById("landscape").style.display = "block";
         } else {
           document.getElementById("landscape").style.display = "none";
@@ -65,7 +65,7 @@
       }
 
       //Listen to orientation change
-      window.addEventListener("orientationchange", doOnOrientationChange);
+      window.addEventListener("orientationchange", orientationHandler);
     </script>
   </body>
 </html>
