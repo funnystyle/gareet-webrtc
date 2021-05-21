@@ -7,7 +7,7 @@
     <title>Gareet WebRTC Sample</title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
   </head>
-  <body onload="doOnOrientationChange();">
+  <body onload="orientationHandler();">
     <div id="landscape"><div>"Rotate Device to Portrait"</div></div>
     <div class="container">
       <header>
@@ -57,7 +57,7 @@
     <script src="js/main.js"></script>
     <script>
       function orientationHandler() {
-        if (window.innerHeight < window.innerWidth) {
+        if (window.innerHeight > window.innerWidth) {
           document.getElementById("landscape").style.display = "block";
         } else {
           document.getElementById("landscape").style.display = "none";
