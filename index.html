@@ -7,7 +7,8 @@
     <title>Gareet WebRTC Sample</title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
   </head>
-  <body>
+  <body onload="doOnOrientationChange();">
+    <div id="landscape"><div>"Rotate Device to Portrait"</div></div>
     <div class="container">
       <header>
         <i class="fas fa-bars"></i>
@@ -54,5 +55,17 @@
     <script src="js/screenfull.min.js"></script>
     <script src="js/howler.core.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      function doOnOrientationChange() {
+        if (window.innerHeight > window.innerWidth) {
+          document.getElementById("landscape").style.display = "block";
+        } else {
+          document.getElementById("landscape").style.display = "none";
+        }
+      }
+
+      //Listen to orientation change
+      window.addEventListener("orientationchange", doOnOrientationChange);
+    </script>
   </body>
 </html>
