@@ -1,0 +1,6 @@
+:root {
+  --width: 100%;
+  --max-width: 500px;
+  --orange: #f2994a;
+  --control-width: calc(100vw - 150px);
+}

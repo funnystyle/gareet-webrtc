@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <i class="fas fa-bars"></i>
+        <h1>GAREET</h1>
+      </header>
+      <div id="vid_container">
+        <video id="video" autoplay playsinline></video>
+        <div id="video_overlay"></div>
+      </div>
+      <div id="gui_controls">
+        <button
+          id="switchCameraButton"
+          name="switch Camera"
+          type="button"
+          aria-pressed="false"
+        ></button>
+        <button id="takePhotoButton" name="take Photo" type="button"></button>
+        <button
+          id="toggleFullScreenButton"
+          name="toggle FullScreen"
+          type="button"
+          aria-pressed="false"
+        ></button>
+      </div>
+      <main>
+        <div class="video-controls">
+          <div class="video-controls__title">
+            <h4>GAREET NO.</h4>
+            <h3>가릿넘버를 인증해주세요.</h3>
+            <h3>(스캔 OR 직접 입력)</h3>
+          </div>
+          <div class="video-controls__border"></div>
+          <button class="video-controls__scan">스캔하기</button>
+          <button class="video-controls__input">직접입력</button>
+          <div class="video-controls__info">
+            <span>어떻게 인증하나요?</span>
+            <a href="#"><i class="fas fa-info-circle"></i></a>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="js/adapter.min.js"></script>
+    <script src="js/screenfull.min.js"></script>
+    <script src="js/howler.core.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
