@@ -1,0 +1,115 @@
+@import url("reset.css");
+@import "variables.css";
+
+@import url("https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap");
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: #eee;
+}
+
+.container {
+  width: var(--width);
+  max-width: var(--max-width);
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  width: var(--width);
+  max-width: var(--max-width);
+  height: 80px;
+  position: fixed;
+  top: 0;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+header i {
+  position: absolute;
+  left: 20px;
+}
+
+main {
+  height: 100vh;
+  /* background-color: #fff; */
+  padding: 110px 30px 30px;
+}
+
+.video-controls {
+  height: calc(100vh - 140px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.video-controls__title {
+  align-self: flex-start;
+}
+
+.video-controls h3 {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.video-controls h4 {
+  letter-spacing: 5px;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.video-controls__border {
+  width: var(--control-width);
+  height: var(--control-width);
+  border: 2px solid #ff5d5d;
+  box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-controls button {
+  width: var(--control-width);
+  height: 40px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-controls__scan {
+  background-color: var(--orange);
+}
+
+.video-controls__input {
+  background-color: #fff;
+}
+
+.video-controls__info {
+  margin-top: 30px;
+}
+
+.video-controls__info span {
+  text-decoration: underline;
+}
+
+#vid_container {
+  position: absolute;
+  z-index: -1;
+  width: var(--width);
+  max-width: var(--max-width);
+  height: 100vh;
+}
+
+#vid_container video {
+  width: 100%;
+  height: 100%;
+}
+
+#gui_controls {
+  display: none;
+}
