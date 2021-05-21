@@ -3,4 +3,5 @@
   --max-width: 500px;
   --orange: #f2994a;
   --control-width: calc(100vw - 150px);
+  --control-max-width: 350px;
 }
