@@ -199,6 +199,12 @@ function initCameraStream() {
       //height: { min: 776, ideal: window.innerHeight, max: 1080 },
       facingMode: currentFacingMode,
     },
+    advanced: [
+      {
+        focusMode: "manual",
+        focusDistance: 5,
+      },
+    ],
   };
 
   navigator.mediaDevices
